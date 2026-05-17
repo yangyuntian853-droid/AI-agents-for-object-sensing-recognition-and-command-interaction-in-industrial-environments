@@ -1,4 +1,5 @@
 # llm_edge
+**😓当前NLP的文件只是一个空中楼阁，还不是能和机器人部分对齐的pipeline，仅作为overview**
 
 本目录是仓库里的**语言侧薄封装**，与 [`yolo_master_edge`](../yolo_master_edge) 并列，面向工业场景：
 
