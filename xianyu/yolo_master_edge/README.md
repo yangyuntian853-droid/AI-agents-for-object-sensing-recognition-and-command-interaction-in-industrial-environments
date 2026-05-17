@@ -1,5 +1,5 @@
 # yolo_master_edge
-
+##😰请在wsl下运行，我没有测试过windows是否可以跑通完整代码**
 本目录是对 [Tencent/YOLO-Master](https://github.com/Tencent/YOLO-Master) 的**薄封装**：在与你现有 `llm_edge` 相同的仓库里，提供统一入口的**目标检测**管线（加载 → 推理 → 训练 / 验证 → 导出），便于「检测 + 语言」组合落地。
 
 上游论文与实现说明见官方仓库；本 README 描述**本包怎么用**，并记录在本机 **tools-detection 数据集（119 类）** 上完成的微调与配套脚本。
