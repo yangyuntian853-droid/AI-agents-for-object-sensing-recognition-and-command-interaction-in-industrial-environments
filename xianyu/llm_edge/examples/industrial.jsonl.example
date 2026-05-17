@@ -1,0 +1,2 @@
+# Industrial JSONL 格式说明（BERT intent + slot）
+# {"text": "...", "intent": "place", "slots": {"action": "place", "object": "滚柱", "target": "料箱", "position": "第3格"}}

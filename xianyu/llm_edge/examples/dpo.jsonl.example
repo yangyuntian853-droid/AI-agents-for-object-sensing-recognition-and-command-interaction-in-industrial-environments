@@ -1,0 +1,2 @@
+# DPO JSONL 格式说明（每行一条 JSON）
+# {"prompt": "...", "chosen": "{...}", "rejected": "{...}"}

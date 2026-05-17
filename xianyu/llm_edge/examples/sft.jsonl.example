@@ -1,0 +1,2 @@
+# SFT JSONL 格式说明（每行一条 JSON，本文件仅为占位，不含训练样本）
+# {"messages": [{"role": "system", "content": "..."}, {"role": "user", "content": "..."}, {"role": "assistant", "content": "{...json...}"}]}
