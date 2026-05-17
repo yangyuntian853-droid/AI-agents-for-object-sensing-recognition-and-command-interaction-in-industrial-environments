@@ -1,0 +1,3 @@
+[Sun May 17 17:59:49 CST 2026] finetune 50 epochs device=0
+[Sun May 17 19:00:29 CST 2026] scratch 100 epochs device=0
+[Sun May 17 19:13:02 CST 2026] val + export onnx (ft_n best)
