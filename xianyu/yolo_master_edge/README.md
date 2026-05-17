@@ -9,7 +9,7 @@
 | 项 | 说明 |
 |----|------|
 | 数据集 | `dataset/`：2660 训练图 + 870 验证图，YOLO 标注，`names` 0–118 共 119 类 |
-| 数据配置 | `dataset/data.yaml`：WSL 路径 `/mnt/d/.../dataset`，替代原 `newdata.yaml` 的 Kaggle 路径 |(dataset太大了我没有传上来）
+| 数据配置 | `dataset/data.yaml`：WSL 路径 `/mnt/d/.../dataset`，替代原 `newdata.yaml` 的 Kaggle 路径 |
 | 环境 | WSL `conda` 环境 `yolo`；`YOLO-Master` 可编辑安装；`flash_attn`；PyTorch **cu128**（`scripts/setup_cuda_torch.sh`） |
 | 预训练权重 | `yolo_master_n.pt`（YOLO-Master-v0.1-N，可 `scripts/download_weights.sh` 下载） |
 | **微调训练** | `ft_n`：50 epoch，`batch=8`，GPU `device=0`，输出见 `artifacts/yolo_master_runs/ft_n/` |
@@ -19,7 +19,8 @@
 
 **微调最终结果（epoch 50，验证集）**：mAP50 ≈ **0.92**，mAP50-95 ≈ **0.82**，Precision ≈ **0.95**，Recall ≈ **0.86**。  
 **部署权重**：`artifacts/yolo_master_runs/ft_n/weights/best.pt`（val / ONNX 导出见下文「验证与导出」）。
-
+**数据集太大我没有上传，链接如下，下载后直接解压进名为dataset的文件夹即可**
+https://www.kaggle.com/datasets/amancherry1902/object-detection-dataset
 ## 与上游的关系
 
 - YOLO-Master 在工程上基于 **Ultralytics** API（`from ultralytics import YOLO`），但代码与权重与 PyPI 上的官方 `ultralytics` **不等价**。
