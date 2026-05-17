@@ -9,7 +9,7 @@
 | 项 | 说明 |
 |----|------|
 | 数据集 | `dataset/`：2660 训练图 + 870 验证图，YOLO 标注，`names` 0–118 共 119 类 |
-| 数据配置 | `dataset/data.yaml`：WSL 路径 `/mnt/d/.../dataset`，替代原 `newdata.yaml` 的 Kaggle 路径 |
+| 数据配置 | `dataset/data.yaml`：WSL 路径 `/mnt/d/.../dataset`，替代原 `newdata.yaml` 的 Kaggle 路径 |(dataset太大了我没有传上来）
 | 环境 | WSL `conda` 环境 `yolo`；`YOLO-Master` 可编辑安装；`flash_attn`；PyTorch **cu128**（`scripts/setup_cuda_torch.sh`） |
 | 预训练权重 | `yolo_master_n.pt`（YOLO-Master-v0.1-N，可 `scripts/download_weights.sh` 下载） |
 | **微调训练** | `ft_n`：50 epoch，`batch=8`，GPU `device=0`，输出见 `artifacts/yolo_master_runs/ft_n/` |
