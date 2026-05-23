@@ -22,6 +22,8 @@
 **微调最终结果（epoch 50，验证集）**：mAP50 ≈ **0.92**，mAP50-95 ≈ **0.82**，Precision ≈ **0.95**，Recall ≈ **0.86**。  
 **部署权重**：`artifacts/yolo_master_runs/ft_n/weights/best.pt`（val / ONNX 导出见下文「验证与导出」）。
 
+数据集太大我没有上传，链接如下，下载后直接解压进名为dataset的文件夹即可 https://www.kaggle.com/datasets/amancherry1902/object-detection-dataset
+
 ## 与上游的关系
 
 - YOLO-Master 在工程上基于 **Ultralytics** API（`from ultralytics import YOLO`），但代码与权重与 PyPI 上的官方 `ultralytics` **不等价**。
